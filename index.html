@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-light: hsl(6, 100%, 80%);
+        --color-dark: hsl(335, 100%, 65%);
+        --color-paleBlue: hsl(243, 100%, 93%);
+        --color-grayishBlue: hsl(229, 7%, 55%);
+        --color-darkBlue: hsl(228, 56%, 26%);
+        --color-veryDarkBlue: hsl(229, 57%, 11%);
+        --font-raleway: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[url('./images/bg-mobile.png')] md:bg-[url('./images/bg-desktop.png')] bg-no-repeat bg-cover md:bg-bottom md:bg-contain bg-veryDarkBlue w-full h-full text-paleBlue font-raleway text-sm flex flex-col items-center justify-center min-h-screen gap-12"
+  >
+    <main
+      class="grid grid-rows-2 md:grid-cols-5 md:grid-rows-1 items-center justify-center md:justify-end gap-3 md:gap-8 mx-auto w-full max-w-4xl"
+    >
+      <section
+        class="bg-darkBlue md:w-full p-8 md:col-span-2 flex flex-col items-start justify-center gap-8 rounded-lg rounded-tr-[50%]"
+      >
+        <img src="./images//logo.svg" alt="Fylo logo" />
+        <div class="flex flex-row gap-4 items-center justify-center">
+          <div
+            class="bg-veryDarkBlue p-2 rounded-md size-12 flex items-center justify-center"
+          >
+            <img src="./images/icon-document.svg" alt="Illustration" />
+          </div>
+          <div
+            class="bg-veryDarkBlue p-2 rounded-md size-12 flex items-center justify-center"
+          >
+            <img src="./images/icon-folder.svg" alt="Illustration" />
+          </div>
+          <div
+            class="bg-veryDarkBlue p-2 rounded-md size-12 flex items-center justify-center"
+          >
+            <img src="./images/icon-upload.svg" alt="Illustration" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative bg-darkBlue h-full md:w-full p-8 md:col-span-3 flex flex-col items-center justify-center text-center text-nowrap gap-2 rounded-lg"
+      >
+        <p class="text-xs md:text-base">
+          You’ve used <span class="font-semibold">815 GB </span> of your storage
+        </p>
+        <div
+          class="bg-veryDarkBlue h-[16px] w-full rounded-full flex items-center"
+        >
+          <div
+            class="w-4/5 h-[12px] ml-[2px] rounded-full bg-gradient-to-r from-[hsl(6,100%,80%)] to-[hsl(335,100%,65%)] grid justify-items-stretch items-stretch"
+          >
+            <div
+              class="size-2 bg-white rounded-full mx-[2px] justify-self-end self-center"
+            ></div>
+          </div>
+        </div>
+        <div class="flex justify-between w-full text-sm font-semibold">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <h1
+          class="font-semibold text-grayishBlue absolute -bottom-8 md:-top-10 md:bottom-auto md:right-8 bg-white p-3 rounded-lg"
+        >
+          <span class="text-3xl text-veryDarkBlue">185 </span>GB Left
+        </h1>
+        <div
+          class="hidden md:block absolute top-2 right-8 border-l-[28px] border-l-transparent border-t-[28px] border-t-white"
+        ></div>
+      </section>
+    </main>
+
+    <footr class="text-center text-xs">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        class="text-dark"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" class="text-light">Onyinye Oguocha</a>.
+    </footr>
+  </body>
+</html>
